@@ -6,7 +6,7 @@
 
 int main()
 {
-    using std::cout, std::endl, std::cin, std::setprecision;
+    using std::cout, std::endl, std::cin, std::setprecision, std::fixed;
     
     int TotalStudent;
     int TotalStudentFull;
@@ -42,10 +42,10 @@ int main()
 
     //output of values
     cout << "calculating..." << endl << endl;
-    cout << "Percentage of full-time students: " << setprecision(4) << PercentageFull << "%" << endl; 
-    cout << "Percentage of part-time students: " << setprecision(4) << PercentagePart << "%" << endl;
-    cout << "Percentage of BAS students: " << setprecision(4) << PercentageBAS << "%" << endl;
-    cout << "Percentage of AA/AS students: " << setprecision(4) << PercentageAA << "%" << endl << endl;
+    cout << "Percentage of full-time students: " << fixed << setprecision(2) << PercentageFull << "%" << endl; 
+    cout << "Percentage of part-time students: " << fixed << setprecision(2) << PercentagePart << "%" << endl;
+    cout << "Percentage of BAS students: " << fixed << setprecision(2) << PercentageBAS << "%" << endl;
+    cout << "Percentage of AA/AS students: " << fixed << setprecision(2) << PercentageAA << "%" << endl << endl;
 
     cout << "End of Data";
 
