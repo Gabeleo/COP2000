@@ -14,7 +14,7 @@ int main()
     int TotalStudentBAS;
     int TotalStudentAA;
 
-    cout << "Demographic statistics: " << endl;
+    cout << "Demographic statistics: " << endl << endl;
 
     //initial input provided by the user
     cout << "total number of students enrolled: ";
@@ -32,6 +32,8 @@ int main()
     cout << "total number of students enrolled at the AA/AS level: ";
     cin >> TotalStudentAA;
 
+    cout << endl;
+
     //Operations to calculate percentages
     double PercentageFull = (static_cast<double>(TotalStudentFull) / static_cast<double>(TotalStudent)) * 100;
     double PercentagePart = (static_cast<double>(TotalStudentPart) / static_cast<double>(TotalStudent)) * 100;
@@ -39,11 +41,11 @@ int main()
     double PercentageAA = (static_cast<double>(TotalStudentAA) / static_cast<double>(TotalStudent)) * 100;
 
     //output of values
-    cout << "calculating..." << endl;
+    cout << "calculating..." << endl << endl;
     cout << "Percentage of full-time students: " << setprecision(4) << PercentageFull << "%" << endl; 
     cout << "Percentage of part-time students: " << setprecision(4) << PercentagePart << "%" << endl;
     cout << "Percentage of BAS students: " << setprecision(4) << PercentageBAS << "%" << endl;
-    cout << "Percentage of AA/AS students: " << setprecision(4) << PercentageAA << "%" << endl;
+    cout << "Percentage of AA/AS students: " << setprecision(4) << PercentageAA << "%" << endl << endl;
 
     cout << "End of Data";
 
