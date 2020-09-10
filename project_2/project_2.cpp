@@ -19,7 +19,8 @@ int main()
     //initial input provided by the user
     cout << "total number of students enrolled: ";
     cin >> TotalStudent;
-
+    cout << endl;
+    
     cout << "total number of students enrolled full-time: ";
     cin >> TotalStudentFull;
 
@@ -44,6 +45,7 @@ int main()
     cout << "calculating..." << endl << endl;
     cout << "Percentage of full-time students: " << fixed << setprecision(2) << PercentageFull << "%" << endl; 
     cout << "Percentage of part-time students: " << fixed << setprecision(2) << PercentagePart << "%" << endl;
+    cout << endl;
     cout << "Percentage of BAS students: " << fixed << setprecision(2) << PercentageBAS << "%" << endl;
     cout << "Percentage of AA/AS students: " << fixed << setprecision(2) << PercentageAA << "%" << endl << endl;
 
