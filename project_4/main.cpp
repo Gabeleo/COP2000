@@ -1,6 +1,6 @@
-//Your name here
+//Gabriel Leo
 //COP2000.0xx (xx = your section number)
-//Short description of what your project will do
+//Ceaser Cipher
 
 #include<iostream>
 #include<fstream>
@@ -23,10 +23,12 @@ int main()
     inputFile.open("October20.txt");
     cout << "Opening input file... " << endl;
 
+    // Parses each word within the text file and passes it to inputWord
     while( inputFile >> inputWord) {
 
     for(int i = 0; i <= inputWord.length(); i++)
     {
+        //Checks if each char is a valid letter
         if((inputWord[i] >= 'a' && inputWord[i] <= 'z') || (inputWord[i] >= 'A' && inputWord[i] <= 'Z')){
 
             for( int j = 0; j < 3; j++){
@@ -47,6 +49,7 @@ int main()
 
     cout << "Encrypting... " << endl << endl;
 
+    //creates and writes encrypted output to specified file
     ofstream outputFile("EncryptedOct20.txt");
     outputFile << outputPhrase;
 
@@ -57,6 +60,6 @@ int main()
 
     cout << "end of program.";
 
-	//system("pause");
+	system("pause");
 	return 0;
 }
