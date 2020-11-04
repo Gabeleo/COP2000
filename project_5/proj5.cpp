@@ -30,7 +30,7 @@ int main()
     int playerNumber;
     int computerNumber;
 
-    seed();
+    //seed();
     playGame(computerNumber, playerNumber, playerCount, compCount);
 
 	system("pause");
@@ -42,11 +42,11 @@ void seed() {
 }
 
 int random(int computerNumber){
-    computerNumber = int(seed() % 10);
-    return 0;
+    return (arc4random() % 10 + 1);
 }
 
 void playGame(int computerNumber, int playerNumber, int playerCount, int compCount){
+    computerNumber = 3;
     compare(computerNumber, playerNumber, playerCount, compCount);
     determineWinner(playerCount, compCount);
     promptNum(playerNumber);

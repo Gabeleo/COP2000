@@ -8,11 +8,11 @@ int main()
 {
     using std::cout, std::endl, std::cin, std::setprecision, std::fixed;
     
-    int TotalStudent;
-    int TotalStudentFull;
-    int TotalStudentPart;
-    int TotalStudentBAS;
-    int TotalStudentAA;
+    int TotalStudent,
+        TotalStudentFull,
+        TotalStudentPart,
+        TotalStudentBAS,
+        TotalStudentAA;
 
     cout << "Demographic statistics: " << endl << endl;
 
@@ -44,12 +44,12 @@ int main()
     //output of values
     cout << "calculating..." << endl << endl;
     cout << "Percentage of full-time students: " << fixed << setprecision(2) << PercentageFull << "%" << endl; 
-    cout << "Percentage of part-time students: " << fixed << setprecision(2) << PercentagePart << "%" << endl;
-    cout << endl;
+    cout << "Percentage of part-time students: " << fixed << setprecision(2) << PercentagePart << "%" << endl << endl;
     cout << "Percentage of BAS students: " << fixed << setprecision(2) << PercentageBAS << "%" << endl;
     cout << "Percentage of AA/AS students: " << fixed << setprecision(2) << PercentageAA << "%" << endl << endl;
 
     cout << "End of Data";
+
 
     system("pause");
     return 0;
